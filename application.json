@@ -41,8 +41,8 @@
         "type": "FLUID"
     },
     "global_setting": {
-        "css": "https://${env.get(\"NODEREDURL\")}/css",
-        "favicon": "https://icon-library.com/images/voice-chat-icon/voice-chat-icon-2.jpg",
+        "css": "${env.get(\"NODEREDURL\")}/css",
+        "favicon": "https://iili.io/JIDA1aI.png",
         "title": ""
     },
     "settings_data": {
