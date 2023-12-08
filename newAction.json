@@ -10,7 +10,7 @@
             "datasource": {
                 "name": "DEFAULT_REST_DATASOURCE",
                 "datasourceConfiguration": {
-                    "url": "https://{{main.env.NODEREDURL}}"
+                    "url": "{{main.env.NODEREDURL}}/saveCredentials"
                 },
                 "invalids": [],
                 "isValid": true,
@@ -40,7 +40,7 @@
                         "value": true
                     }
                 ],
-                "path": "/saveCredentials"
+                "path": ""
             },
             "dynamicBindingPathList": [
                 {
@@ -61,13 +61,13 @@
                 "JSON.stringify(ElevenlabsVoice.selectedOptionValue)",
                 "JSON.stringify(Prompt.text)",
                 "JSON.stringify(SetGreeting.text)",
-                "main.env.NODEREDURL,2023-11-29T08:30:01.193Z,2023-12-07T15:26:38.078Z,read:actions,manage:actions,execute:actions,DEFAULT_REST_DATASOURCE,https://{{main.env.NODEREDURL"
+                "main.env.NODEREDURL,2023-11-29T08:30:01.193Z,2023-12-08T14:40:57.088Z,read:actions,manage:actions,execute:actions,DEFAULT_REST_DATASOURCE,{{main.env.NODEREDURL"
             ],
             "userSetOnLoad": false,
             "confirmBeforeExecute": false
         },
         "createdAt": "2023-11-29T08:30:01.193Z",
-        "updatedAt": "2023-12-07T15:35:59.953Z",
+        "updatedAt": "2023-12-08T14:41:00.669Z",
         "deleted": false,
         "policies": [
             {
@@ -98,7 +98,7 @@
             "datasource": {
                 "name": "DEFAULT_REST_DATASOURCE",
                 "datasourceConfiguration": {
-                    "url": "https://{{main.env.NODEREDURL}}"
+                    "url": "{{main.env.NODEREDURL}}/getCredentials"
                 },
                 "invalids": [],
                 "isValid": true,
@@ -127,7 +127,7 @@
                         "value": true
                     }
                 ],
-                "path": "/getCredentials"
+                "path": ""
             },
             "dynamicBindingPathList": [
                 {
@@ -143,7 +143,7 @@
             "confirmBeforeExecute": false
         },
         "createdAt": "2023-11-29T10:35:27.454Z",
-        "updatedAt": "2023-12-07T15:35:48.700Z",
+        "updatedAt": "2023-12-08T14:35:41.241Z",
         "deleted": false,
         "policies": [
             {
