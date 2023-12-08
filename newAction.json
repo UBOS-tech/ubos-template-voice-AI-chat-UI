@@ -1,0 +1,166 @@
+[
+    {
+        "_id": "6566f6892c42fe868e57e26b",
+        "applicationId": "uieditor-9268",
+        "organizationId": "Org",
+        "pluginType": "API",
+        "pluginId": "API",
+        "Action": {
+            "name": "saveCredentials",
+            "datasource": {
+                "name": "DEFAULT_REST_DATASOURCE",
+                "datasourceConfiguration": {
+                    "url": "https://{{main.env.NODEREDURL}}"
+                },
+                "invalids": [],
+                "isValid": true,
+                "pluginId": "API",
+                "messages": []
+            },
+            "executeOnLoad": false,
+            "pageId": "home",
+            "actionConfiguration": {
+                "timeoutInMillisecond": 10000,
+                "encodeParamsToggle": true,
+                "httpMethod": "POST",
+                "headers": [
+                    {
+                        "key": "content-type",
+                        "value": "application/json"
+                    }
+                ],
+                "queryParameters": [],
+                "body": "{\n\t\"botName\": {{JSON.stringify(BotName.text)}},\n\t\"botToken\": {{JSON.stringify(BotToken.text)}},\n\t\"openAIKey\": {{JSON.stringify(OpenAIKey.text)}},\n\t\"elevenlabsKey\": {{JSON.stringify(ElevenlabsKey.text)}},\n\t\"elevenlabsVoice\": {{JSON.stringify(ElevenlabsVoice.selectedOptionValue)}},\n\t\"prompt\": {{JSON.stringify(Prompt.text)}},\n\t\"setGreetings\": {{JSON.stringify(SetGreeting.text)}}\n}\n",
+                "bodyFormData": [],
+                "formData": {
+                    "apiContentType": "application/json"
+                },
+                "pluginSpecifiedTemplates": [
+                    {
+                        "value": true
+                    }
+                ],
+                "path": "/saveCredentials"
+            },
+            "dynamicBindingPathList": [
+                {
+                    "key": "body"
+                },
+                {
+                    "key": "datasourceUrl"
+                }
+            ],
+            "isValid": true,
+            "invalids": [],
+            "jsonPathKeys": [
+                "main.env.NODEREDURL",
+                "JSON.stringify(BotName.text)",
+                "JSON.stringify(BotToken.text)",
+                "JSON.stringify(OpenAIKey.text)",
+                "JSON.stringify(ElevenlabsKey.text)",
+                "JSON.stringify(ElevenlabsVoice.selectedOptionValue)",
+                "JSON.stringify(Prompt.text)",
+                "JSON.stringify(SetGreeting.text)",
+                "main.env.NODEREDURL,2023-11-29T08:30:01.193Z,2023-12-07T15:26:38.078Z,read:actions,manage:actions,execute:actions,DEFAULT_REST_DATASOURCE,https://{{main.env.NODEREDURL"
+            ],
+            "userSetOnLoad": false,
+            "confirmBeforeExecute": false
+        },
+        "createdAt": "2023-11-29T08:30:01.193Z",
+        "updatedAt": "2023-12-07T15:35:59.953Z",
+        "deleted": false,
+        "policies": [
+            {
+                "permission": "read:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "manage:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "execute:actions",
+                "groups": [],
+                "users": []
+            }
+        ]
+    },
+    {
+        "_id": "656713ef0e58b867f06486e0",
+        "applicationId": "uieditor-9268",
+        "organizationId": "Org",
+        "pluginType": "API",
+        "pluginId": "API",
+        "Action": {
+            "name": "getCredentials",
+            "datasource": {
+                "name": "DEFAULT_REST_DATASOURCE",
+                "datasourceConfiguration": {
+                    "url": "https://{{main.env.NODEREDURL}}"
+                },
+                "invalids": [],
+                "isValid": true,
+                "pluginId": "API",
+                "messages": []
+            },
+            "executeOnLoad": false,
+            "pageId": "home",
+            "actionConfiguration": {
+                "timeoutInMillisecond": 10000,
+                "encodeParamsToggle": true,
+                "httpMethod": "GET",
+                "headers": [
+                    {
+                        "key": "content-type",
+                        "value": "application/json"
+                    }
+                ],
+                "queryParameters": [],
+                "bodyFormData": [],
+                "formData": {
+                    "apiContentType": "application/json"
+                },
+                "pluginSpecifiedTemplates": [
+                    {
+                        "value": true
+                    }
+                ],
+                "path": "/getCredentials"
+            },
+            "dynamicBindingPathList": [
+                {
+                    "key": "datasourceUrl"
+                }
+            ],
+            "isValid": true,
+            "invalids": [],
+            "jsonPathKeys": [
+                "main.env.NODEREDURL"
+            ],
+            "userSetOnLoad": false,
+            "confirmBeforeExecute": false
+        },
+        "createdAt": "2023-11-29T10:35:27.454Z",
+        "updatedAt": "2023-12-07T15:35:48.700Z",
+        "deleted": false,
+        "policies": [
+            {
+                "permission": "read:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "manage:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "execute:actions",
+                "groups": [],
+                "users": []
+            }
+        ]
+    }
+]
