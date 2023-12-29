@@ -3,7 +3,7 @@
     "name": "uieditor-9268",
     "slug": "uieditor-9268",
     "organizationId": "Org",
-    "isPublic": false,
+    "isPublic": true,
     "isMenu": false,
     "isShowPlatformTag": true,
     "createdAt": "2023-11-28T14:04:40.865Z",
